@@ -1,6 +1,5 @@
 import { connectDB } from "@/lib/mongo";
 import Todo from "@/models/Todo";
-import { NextApiRequest } from "next";
 import { NextRequest, NextResponse } from "next/server";
 
 export const POST = async (req: NextRequest) => {

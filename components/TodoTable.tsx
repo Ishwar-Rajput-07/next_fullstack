@@ -44,13 +44,13 @@ const TodoTable = () => {
 
     return <>
         <h1>Todo Table </h1>
-
+        <hr />
         {
             allTodos.map(item => <div key={item._id}>
                 <h1 className="text-2xl">{item.task}</h1>
                 <p>{item.desc}</p>
                 <button className="py-2 px-4 bg-red-500">Delete</button>
-                <hr />
+
             </div>)
         }
     </>
