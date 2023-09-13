@@ -1,9 +1,8 @@
 import { connectDB } from "@/lib/mongo";
 import Todo from "@/models/Todo";
-import { NextApiRequest } from "next";
 import { NextRequest, NextResponse } from "next/server";
 
-export const DELETE = async (req: NextApiRequest, { params }: { params: { id: string } }) => {
+export const DELETE = async (req: NextRequest, { params }: { params: { id: string } }) => {
     try {
         // console.log(params); // old new
         await connectDB()
